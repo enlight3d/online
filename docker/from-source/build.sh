@@ -23,7 +23,7 @@ sudo echo "works"
 
 # Check env variables
 if [ -z "$DOCKER_HUB_REPO" ]; then
-  DOCKER_HUB_REPO="mydomain/collaboraonline"
+  DOCKER_HUB_REPO="thibaudmathieu/collabora-online-developer-edition"
 fi;
 if [ -z "$DOCKER_HUB_TAG" ]; then
   DOCKER_HUB_TAG="latest"
@@ -36,10 +36,10 @@ fi;
 echo "Building core branch '$CORE_BRANCH'"
 
 if [ -z "$COLLABORA_ONLINE_REPO" ]; then
-  COLLABORA_ONLINE_REPO="https://github.com/CollaboraOnline/online.git"
+  COLLABORA_ONLINE_REPO="https://github.com/enlight3d/online.git"
 fi;
 if [ -z "$COLLABORA_ONLINE_BRANCH" ]; then
-  COLLABORA_ONLINE_BRANCH="master"
+  COLLABORA_ONLINE_BRANCH="private/enlight3d/autosave"
 fi;
 echo "Building online branch '$COLLABORA_ONLINE_BRANCH' from '$COLLABORA_ONLINE_REPO'"
 
